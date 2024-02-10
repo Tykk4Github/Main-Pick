@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Page</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            margin: 0;
+            font-family: 'Minecraft', sans-serif; /* Use a Minecraft-like font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .loading-spinner {
+            border: 8px solid #55acee;
+            border-top: 8px solid #f1f1f1;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            box-sizing: border-box;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-spinner"></div>
+
+    <script>
+        // Simulate loading time (you can replace this with your actual loading logic)
+        setTimeout(() => {
+            // Redirect to the main page after loading
+            window.location.href = 'Pick.html';
+        }, 3000); // Change 3000 to your desired loading time in milliseconds
+    </script>
+</body>
+</html>
